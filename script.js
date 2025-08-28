@@ -1,4 +1,3 @@
-// --- GALERIA ---
 let midias = document.querySelectorAll(".galeria img, .galeria video");
 let figuras = document.querySelectorAll(".galeria figure");
 let indiceAtual = 0;

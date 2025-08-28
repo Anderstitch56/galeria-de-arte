@@ -10,7 +10,6 @@
 </head>
 <body>
 <h1 class="titulo">MINHA GALERIA DE ARTE</h1>
-<video src="img/img-art/desenho-15.mp4" autoplay loop muted playsinline style="width: 20px;"></video>
 
 <div class="galeria">
   <figure>
@@ -35,7 +34,6 @@
   </figure>
   <figure>
     <img src="img/img-art/desenho-7.png" alt="Arte 7" onclick="abrirLightbox(6)">
-    <figcaption>Minha legenda 7</figcaption>
   </figure>
   <figure>
     <img src="img/img-art/desenho-8.png" alt="Arte 8" onclick="abrirLightbox(7)">
@@ -63,7 +61,6 @@
   </figure>
 </div>
 
-<!-- Lightbox Galeria -->
 <div id="lightboxGaleria" class="lightbox">
   <span class="fechar" onclick="fecharLightbox()">✖</span>
   <img id="lightbox-img" style="max-width:90%; max-height:80%; display:none;">
@@ -73,15 +70,12 @@
   <button class="nav-btn next" onclick="mudarImagem(1)">⟩</button>
 </div>
 
-
-<!-- Botão Sobre Mim -->
 <button id="openBtn" class="botao">Sobre mim</button>
 
-<!-- Lightbox Sobre Mim -->
 <div id="lightboxSobre" class="lightboxSobreMim">
   <div class="conteudo">
     <span id="closeBtn" class="fechar">&times;</span>
-    <h2 class="animado">SOBRE MIM</h2>
+    <h2 class="animado" style="text-align: center;">SOBRE MIM</h2>
     <p class="animado">Aos meus 12 anos, vendo um vídeo no yotube sobre o jogo Mario, tentei desenhar os personagens do jogo, 
     até eu mostrar para minha irmã os desenhos, ela me disse que eu tinha talento e que eu poderia ser um designer de games.
     Eu nem sabia o que era um "Designer de games" só sabia que tinha que desenhar personagens de jogo pelo nome da profissão kkkk, foi então que
