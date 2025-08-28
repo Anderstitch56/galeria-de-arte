@@ -12,68 +12,55 @@
 <h1 class="titulo">MINHA GALERIA DE ARTE</h1>
 
 <div class="galeria">
-    <figure>
-        <img src="img/img-art/desenho-1.jpg" alt="Arte 1" onclick="abrirLightbox(0)">
-        <figcaption>Minha legenda 1</figcaption>
-    </figure>
-    <figure>
-        <img src="img/img-art/desenho-1.jpg" alt="Arte 2" onclick="abrirLightbox(1)">
-        <figcaption>Minha legenda 2</figcaption>
-    </figure>
-    <figure>
-        <img src="img/img-art/desenho-1.jpg" alt="Arte 3" onclick="abrirLightbox(2)">
-        <figcaption>Minha legenda 3</figcaption>
-    </figure>
-    <figure>
-        <img src="img/img-art/desenho-1.jpg" alt="Arte 4" onclick="abrirLightbox(3)">
-        <figcaption>Minha legenda 4</figcaption>
-    </figure>
-    <figure>
-        <img src="img/img-art/desenho-1.jpg" alt="Arte 5" onclick="abrirLightbox(4)">
-        <figcaption>Minha legenda 5</figcaption>
-    </figure>
-    <figure>
-        <img src="img/img-art/desenho-1.jpg" alt="Arte 6" onclick="abrirLightbox(5)">
-        <figcaption>Minha legenda 6</figcaption>
-    </figure>
+  <figure>
+    <img src="img/img-art/desenho-1.png" alt="Arte 1" onclick="abrirLightbox(0)">
+    <figcaption>Minha legenda 1</figcaption>
+  </figure>
+  <figure>
+    <img src="img/img-art/desenho-2.png" alt="Arte 2" onclick="abrirLightbox(1)">
+    <figcaption>Minha legenda 2</figcaption>
+  </figure>
+  <figure>
+    <img src="img/img-art/desenho-3.png" alt="Arte 3" onclick="abrirLightbox(2)">
+    <figcaption>Minha legenda 3</figcaption>
+  </figure>
+  <figure>
+    <img src="img/img-art/desenho-4.png" alt="Arte 4" onclick="abrirLightbox(3)">
+    <figcaption>Minha legenda 4</figcaption>
+  </figure>
+  <figure>
+    <img src="img/img-art/desenho-5.png" alt="Arte 5" onclick="abrirLightbox(4)">
+    <figcaption>Minha legenda 5</figcaption>
+  </figure>
+  <figure>
+    <img src="img/img-art/desenho-6.png" alt="Arte 6" onclick="abrirLightbox(5)">
+    <figcaption>Minha legenda 6</figcaption>
+  </figure>
 </div>
 
-<!-- Lightbox da Galeria -->
+<!-- Lightbox Galeria -->
 <div id="lightboxGaleria" class="lightbox">
-    <span class="fechar" onclick="fecharLightbox()">✖</span>
-    <img id="lightbox-img">
-    <p id="lightbox-caption"></p>
-    <button class="nav-btn prev" onclick="mudarImagem(-1)">⟨</button>
-    <button class="nav-btn next" onclick="mudarImagem(1)">⟩</button>
+  <span class="fechar" onclick="fecharLightbox()">✖</span>
+  <img id="lightbox-img">
+  <p id="lightbox-caption"></p>
+  <button class="nav-btn prev" onclick="mudarImagem(-1)">⟨</button>
+  <button class="nav-btn next" onclick="mudarImagem(1)">⟩</button>
 </div>
 
-<!-- Botão "Sobre mim" -->
+<!-- Botão Sobre Mim -->
 <button id="openBtn" class="botao">Sobre mim</button>
 
 <!-- Lightbox Sobre Mim -->
 <div id="lightboxSobre" class="lightboxSobreMim">
-    <div class="conteudo">
-        <span id="closeBtn" class="fechar">&times;</span>
-        <h2 class="animado">SOBRE MIM</h2>
-        <p class="animado">Aos meus 12 anos comecei a desenhar personagens do Mario até
-            que um dia minha irmá vira, me olha e diz "Você seria um ótimo designer de games"
-            Foi aí que comecei a pesquisar sobre o assunto e me apaixonei pela área de design.
-        </p>
-        <img src="img/img-art/desenho-1.jpg" alt="Minha Foto" class="foto-sobre animado" style="width: 150px;"></src>
-        <p class="animado">O tempo passou e comecei a me aprimorar, sempre quis fazer aulas de desenho,
-            mas por morar em uma cidade pequena, não ter dinheiro pra poder pagar cursos online eu aprendi
-            vendo pessoas desenhando Youtube e se inspirando em artistas que eu adimiro
-            como Diogo Camargo, Renata Celi, Amigos muito proximos e etc...
-        </p>
-        <img src="img/img-art/desenho-1.jpg" alt="Minha Foto" class="foto-sobre animado" style="width: 150px;"></src>
-        <p class="animado">Ainda não sou um profissional, tenho muito a aprender, mas os caminhos que escolhi pra Mim
-            me levaram a escolher a área de TI, onde estou formado e pued abrir um leque de possibilidades para minha 
-            vida profissional, mas nunca deixei meu sonho de ser um designer de games de lado, afinal descobri por meio
-            da programação que posso criar meus próprios jogos e personagens, dar vida a minha arte e jogar com eles.
-            Esse site/blog/galeria/não sei o que é kkkkk, é uma prova disso.
-        </p>
-        <p class="animado">Texto animado 4...</p>
-    </div>
+  <div class="conteudo">
+    <span id="closeBtn" class="fechar">&times;</span>
+    <h2 class="animado">SOBRE MIM</h2>
+    <p class="animado">Aos meus 12 anos comecei a desenhar personagens do Mario...</p>
+    <img src="img/img-art/desenho-1.jpg" alt="Minha Foto" class="foto-sobre animado">
+    <p class="animado">O tempo passou e comecei a me aprimorar...</p>
+    <img src="img/img-art/desenho-1.jpg" alt="Minha Foto" class="foto-sobre animado">
+    <p class="animado">Ainda não sou um profissional...</p>
+  </div>
 </div>
 </body>
 </html>
