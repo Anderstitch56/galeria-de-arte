@@ -9,95 +9,121 @@
 <title>Minha Galeria</title>
 </head>
 <body>
-<h1 class="titulo">MINHA GALERIA DE ARTE</h1>
+  <canvas id="galaxy"></canvas>
+  <h1 class="titulo">
+    <span>✨</span>
+    <span>M</span><span>i</span><span>n</span><span>h</span><span>a</span>
+    &nbsp;
+    <span>G</span><span>a</span><span>l</span><span>e</span><span>r</span><span>i</span><span>a</span>
+    <span>✨</span>
+  </h1>
 
-<div class="galeria">
-  <figure>
-    <img src="img/img-art/desenho-1.png" alt="Arte 1" onclick="abrirLightbox(0)">
-  </figure>
-  <figure>
-    <img src="img/img-art/desenho-2.png" alt="Arte 2" onclick="abrirLightbox(1)">
-  </figure>
-  <figure>
-    <img src="img/img-art/desenho-3.png" alt="Arte 3" onclick="abrirLightbox(2)">
-  </figure>
-  <figure>
-    <img src="img/img-art/desenho-4.png" alt="Arte 4" onclick="abrirLightbox(3)">
-  </figure>
-  <figure>
-    <img src="img/img-art/desenho-5.png" alt="Arte 5" onclick="abrirLightbox(4)">
-    <figcaption>Princesa Mononoke</figcaption>
-  </figure>
-  <figure>
-    <img src="img/img-art/desenho-6.png" alt="Arte 6" onclick="abrirLightbox(5)">
-    <figcaption>Colab com katy</figcaption>
-  </figure>
-  <figure>
-    <img src="img/img-art/desenho-7.png" alt="Arte 7" onclick="abrirLightbox(6)">
-  </figure>
-  <figure>
-    <img src="img/img-art/desenho-8.png" alt="Arte 8" onclick="abrirLightbox(7)">
-  </figure>
-  <figure>
-    <img src="img/img-art/desenho-9.png" alt="Arte 9" onclick="abrirLightbox(8)">
-  </figure>
-  <figure>
-    <img src="img/img-art/desenho-10.png" alt="Arte 10" onclick="abrirLightbox(9)">
-  </figure>
-  <figure>
-    <img src="img/img-art/desenho-11.png" alt="Arte 11" onclick="abrirLightbox(10)">
-  </figure>
-  <figure>
-    <img src="img/img-art/desenho-12.png" alt="Arte 12" onclick="abrirLightbox(11)">
-  </figure>
-  <figure>
-    <img src="img/img-art/desenho-13.png" alt="Arte 13" onclick="abrirLightbox(12)">
-  </figure>
-  <figure>
-    <img src="img/img-art/desenho-14.png" alt="Arte 14" onclick="abrirLightbox(13)">
-  </figure>
-  <figure>  
-    <video src="img/img-art/desenho-15.mp4" autoplay loop muted playsinline style="width: 300px;" alt="Arte 15" onclick="abrirLightbox(14)"></video>
-  </figure>
-</div>
-
-<div id="lightboxGaleria" class="lightbox">
-  <span class="fechar" onclick="fecharLightbox()">✖</span>
-  <img id="lightbox-img" style="max-width:90%; max-height:80%; display:none;">
-  <video id="lightbox-video" controls style="max-width:90%; max-height:80%; display:none;"></video>
-  <p id="lightbox-caption"></p>
-  <button class="nav-btn prev" onclick="mudarImagem(-1)">⟨</button>
-  <button class="nav-btn next" onclick="mudarImagem(1)">⟩</button>
-</div>
-
-<button id="openBtn" class="botao">Sobre mim</button>
-
-<div id="lightboxSobre" class="lightboxSobreMim">
-  <div class="conteudo">
-    <span id="closeBtn" class="fechar">&times;</span>
-    <h2 class="animado" style="text-align: center;">SOBRE MIM</h2>
-    <p class="animado">Aos meus 12 anos, vendo um vídeo no yotube sobre o jogo Mario, tentei desenhar os personagens do jogo, 
-    até eu mostrar para minha irmã os desenhos, ela me disse que eu tinha talento e que eu poderia ser um designer de games.
-    Eu nem sabia o que era um "Designer de games" só sabia que tinha que desenhar personagens de jogo pelo nome da profissão kkkk, foi então que
-    comecei a pesquisar sobre o assunto.</p>
-    <img src="img/img-art/desenho-1.jpg" alt="Minha Foto" class="foto-sobre animado">
-    <p class="animado">Me iteressei pela área e decide que focaria nesse objetivo, mas minha familía é simples e não tinha dinheiro para pagar algum curso
-        de desenho, além de eu morar do interior de São Paulo em uma cidade com 5 mil habitantes onde não tem nada, passei várias horas em frente a uma tela
-        assistindo artistas como Renata Celi, Diogo Camargo, Thiago Spyked entre outros artistas desenhando e aprendendo...
-        Conheci e fiz muitos amigos que desenham e que me ajudaram a desenvolver meu traço.</p>
-    <img src="img/img-art/desenho-1.jpg" alt="Minha Foto" class="foto-sobre animado">
-    <p class="animado">Ainda não sou um profissional, estou longe disso, mas sempre busquei me desenvolver cada vez mais, mas a vida nem sempre é como planjamos,
-        anos se passaram e acabei me formando na área da tecnoligia como desenvolvedor e analista de sistemas, mas nunca deixei de desenhar ou querer ser um designer de games,
-        Foi quando descobri que podia juntar as duas coisas que mais gosto, tecnologia e arte, e comecei a estudar programação de jogos e arte digital, que abriru um leque de oportunidades
-    </p>
-    <img src="img/img-art/desenho-1.jpg" alt="Minha Foto" class="foto-sobre animado">
-    <p class="animado">Agora através da programação, não preciso só desenhar personagens como também posso dar vida a eles, criar animações,
-        jogos... posso dar asas a minha imaginação, quando fiz meu primeiro jogo, eu fiquei um tempo olhando para aquela tela cheia de códigos e imagens
-        e pensando "Caramba, eu que fiz isso!" foi uma sensação incrível...
-        A maneira que encontrei pra demonstrar isso a você que ta lendo é através desse site/blog/galeria feito por mim kkk.
-        É isso, obrigado por ter lido até aqui e aproveite a galeria!      :D ass: Anderson O.
-    </p>
+  <div class="galeria">
+    <figure>
+      <img src="img/img-art/desenho-1.png" alt="Arte 1" onclick="abrirLightbox(0)">
+    </figure>
+    <figure>
+      <img src="img/img-art/desenho-2.png" alt="Arte 2" onclick="abrirLightbox(1)">
+    </figure>
+    <figure>
+      <img src="img/img-art/desenho-3.png" alt="Arte 3" onclick="abrirLightbox(2)">
+    </figure>
+    <figure>
+      <img src="img/img-art/desenho-4.png" alt="Arte 4" onclick="abrirLightbox(3)">
+    </figure>
+    <figure>
+      <img src="img/img-art/desenho-5.png" alt="Arte 5" onclick="abrirLightbox(4)">
+      <figcaption>Princesa Mononoke</figcaption>
+    </figure>
+    <figure>
+      <img src="img/img-art/desenho-6.png" alt="Arte 6" onclick="abrirLightbox(5)">
+      <figcaption>Colab com katy</figcaption>
+    </figure>
+    <figure>
+      <img src="img/img-art/desenho-7.png" alt="Arte 7" onclick="abrirLightbox(6)">
+    </figure>
+    <figure>
+      <img src="img/img-art/desenho-8.png" alt="Arte 8" onclick="abrirLightbox(7)">
+    </figure>
+    <figure>
+      <img src="img/img-art/desenho-9.png" alt="Arte 9" onclick="abrirLightbox(8)">
+    </figure>
+    <figure>
+      <img src="img/img-art/desenho-10.png" alt="Arte 10" onclick="abrirLightbox(9)">
+    </figure>
+    <figure>
+      <img src="img/img-art/desenho-11.png" alt="Arte 11" onclick="abrirLightbox(10)">
+    </figure>
+    <figure>
+      <img src="img/img-art/desenho-12.png" alt="Arte 12" onclick="abrirLightbox(11)">
+    </figure>
+    <figure>
+      <img src="img/img-art/desenho-13.png" alt="Arte 13" onclick="abrirLightbox(12)">
+    </figure>
+    <figure>
+      <img src="img/img-art/desenho-14.png" alt="Arte 14" onclick="abrirLightbox(13)">
+    </figure>
+    <figure>  
+      <video src="img/img-art/desenho-15.mp4" autoplay loop muted playsinline style="width: 300px;" alt="Arte 15" onclick="abrirLightbox(14)"></video>
+    </figure>
   </div>
-</div>
+
+  <div id="lightboxGaleria" class="lightbox">
+    <span class="fechar" onclick="fecharLightbox()">✖</span>
+    <img id="lightbox-img" style="max-width:90%; max-height:80%; display:none;">
+    <video id="lightbox-video" controls style="max-width:90%; max-height:80%; display:none;"></video>
+    <p id="lightbox-caption"></p>
+    <button class="nav-btn prev" onclick="mudarImagem(-1)">⟨</button>
+    <button class="nav-btn next" onclick="mudarImagem(1)">⟩</button>
+  </div>
+
+  <button id="openBtn" class="botao">Sobre mim</button>
+  
+
+  <div id="lightboxSobre" class="lightboxSobreMim">  
+    <div class="conteudo">
+      <span id="closeBtn" class="fechar">&times;</span>
+      <img src="img/img-art/eu-1.jpg" alt="Minha Foto" class="foto-eu" style="
+          position: absolute; 
+          top: 5px; 
+          left: 10px; 
+          width: 50px;
+        ">
+
+      <h2 class="animado" style="text-align: center;">SOBRE MIM</h2>
+      <p class="animado">Aos meus 12 anos, vendo um vídeo no yotube sobre o jogo Mario, tentei desenhar os personagens do jogo, 
+      até eu mostrar para minha irmã os desenhos, ela me disse que eu tinha talento e que eu poderia ser um designer de games.
+      Eu nem sabia o que era um "Designer de games" só sabia que tinha que desenhar personagens de jogo pelo nome da profissão kkkk, foi então que
+      comecei a pesquisar sobre o assunto.</p>
+      <div class="fotos-lado">
+        <img src="img/img-art/desenho-sobre-1.jpg" alt="Minha Foto" class="foto-sobre animado">
+        <img src="img/img-art/desenho-sobre-2.jpg" alt="Minha Foto" class="foto-sobre animado">
+      </div>
+      <p class="animado">Me iteressei pela área e decide que focaria nesse objetivo, mas minha familía é simples e não tinha dinheiro para pagar algum curso
+          de desenho, além de eu morar do interior de São Paulo em uma cidade com 5 mil habitantes onde não tem nada, passei várias horas em frente a uma tela
+          assistindo artistas como Renata Celi, Diogo Camargo, Thiago Spyked entre outros artistas desenhando e aprendendo...
+          Conheci e fiz muitos amigos que desenham e que me ajudaram a desenvolver meu traço.</p>
+      <div class="fotos-lado">
+        <img src="img/img-art/desenho-sobre-3.jpg" alt="Minha Foto" class="foto-sobre animado">
+      </div>
+      <p class="animado">Ainda não sou um profissional, estou longe disso, mas sempre busquei me desenvolver cada vez mais, mas a vida nem sempre é como planjamos,
+          anos se passaram e acabei me formando na área da tecnoligia como desenvolvedor e analista de sistemas, mas nunca deixei de desenhar ou querer ser um designer de games,
+          Foi quando descobri que podia juntar as duas coisas que mais gosto, tecnologia e arte, e comecei a estudar programação de jogos e arte digital, que abriru um leque de oportunidades
+      </p>
+      <div class="fotos-lado">
+        <img src="img/img-art/desenho-sobre-4.jpg" alt="Minha Foto" class="foto-sobre animado">
+        <img src="img/img-art/desenho-sobre-5.jpg" alt="Minha Foto" class="foto-sobre animado">
+      </div>
+      <p class="animado">Agora através da programação, não preciso só desenhar personagens como também posso dar vida a eles, criar animações,
+          jogos... posso dar asas a minha imaginação, quando fiz meu primeiro jogo, eu fiquei um tempo olhando para aquela tela cheia de códigos e imagens
+          e pensando "Caramba, eu que fiz isso!" foi uma sensação incrível...
+          A maneira que encontrei pra demonstrar isso a você que ta lendo é através desse site/blog/galeria feito por mim kkk.
+          É isso, obrigado por ter lido até aqui e aproveite a galeria!      :D ass: Anderson O.
+      </p>
+      <div style="display: flex; justify-content: center;">
+        <img src="img/img-art/eu-2.jpg" alt="Minha Foto" class="foto-sobre animado" style="width: 100px;">
+      </div>
+    </div>
+  </div>
 </body>
 </html>

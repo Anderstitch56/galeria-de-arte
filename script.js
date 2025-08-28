@@ -76,3 +76,60 @@ function verificarScroll() {
 
 // Atualiza animações quando o usuário rola dentro da lightbox
 lightboxSobre.addEventListener("scroll", verificarScroll);
+
+
+const canvas = document.getElementById('galaxy');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const stars = [];
+const numStars = 300;
+
+for (let i = 0; i < numStars; i++) {
+  stars.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    size: Math.random() * 2 + 0.5,
+    speed: Math.random() * 0.05,
+    brightness: Math.random() * 1.5
+  });
+}
+
+let mouseX = canvas.width / 2;
+let mouseY = canvas.height / 2;
+
+canvas.addEventListener('mousemove', e => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+function draw() {
+  ctx.fillStyle = 'black';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  stars.forEach(star => {
+    const dx = (mouseX - canvas.width/2) * star.speed;
+    const dy = (mouseY - canvas.height/2) * star.speed;
+
+    star.brightness += (Math.random() - 0.5) * 0.1;
+    if(star.brightness > 2) star.brightness = 2;
+    if(star.brightness < 0) star.brightness = 0;
+
+    ctx.fillStyle = `rgba(255,255,255,${star.brightness})`;
+    ctx.beginPath();
+    ctx.arc(star.x - dx, star.y - dy, star.size, 0, Math.PI*2);
+    ctx.fill();
+  });
+
+  requestAnimationFrame(draw);
+}
+
+draw();
+
+window.addEventListener('mousemove', e => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+
