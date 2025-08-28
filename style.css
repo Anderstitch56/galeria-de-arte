@@ -218,7 +218,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow-y: auto;
-  padding: 40px;
+  padding: 40px;  
   z-index: 1000;
 }
 
