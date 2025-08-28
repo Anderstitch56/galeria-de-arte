@@ -1,19 +1,35 @@
 // --- GALERIA ---
-let imagens = document.querySelectorAll(".galeria img");
+let midias = document.querySelectorAll(".galeria img, .galeria video");
 let figuras = document.querySelectorAll(".galeria figure");
 let indiceAtual = 0;
 
 function abrirLightbox(indice) {
   const lightbox = document.getElementById("lightboxGaleria");
   const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxVideo = document.getElementById("lightbox-video");
   const lightboxCaption = document.getElementById("lightbox-caption");
 
   indiceAtual = indice;
-  lightboxImg.src = imagens[indice].src;
+  let item = midias[indice];
+
+  // Se for imagem
+  if (item.tagName === "IMG") {
+    lightboxImg.src = item.src;
+    lightboxImg.style.display = "block";
+    lightboxVideo.style.display = "none";
+  } 
+  // Se for vídeo
+  else if (item.tagName === "VIDEO") {
+    lightboxVideo.src = item.src;
+    lightboxVideo.style.display = "block";
+    lightboxImg.style.display = "none";
+  }
+
   let caption = figuras[indice].querySelector("figcaption");
   lightboxCaption.textContent = caption ? caption.textContent : "";
   lightbox.style.display = "flex";
 }
+
 
 function fecharLightbox() {
   document.getElementById("lightboxGaleria").style.display = "none";
@@ -21,10 +37,11 @@ function fecharLightbox() {
 
 function mudarImagem(direcao) {
   indiceAtual += direcao;
-  if (indiceAtual < 0) indiceAtual = imagens.length - 1;
-  if (indiceAtual >= imagens.length) indiceAtual = 0;
+  if (indiceAtual < 0) indiceAtual = midias.length - 1;
+  if (indiceAtual >= midias.length) indiceAtual = 0;
   abrirLightbox(indiceAtual);
 }
+
 
 // --- BOTÃO SOBRE MIM ---
 const openBtn = document.getElementById("openBtn");

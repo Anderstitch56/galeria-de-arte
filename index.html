@@ -10,42 +10,69 @@
 </head>
 <body>
 <h1 class="titulo">MINHA GALERIA DE ARTE</h1>
+<video src="img/img-art/desenho-15.mp4" autoplay loop muted playsinline style="width: 20px;"></video>
 
 <div class="galeria">
   <figure>
     <img src="img/img-art/desenho-1.png" alt="Arte 1" onclick="abrirLightbox(0)">
-    <figcaption>Minha legenda 1</figcaption>
   </figure>
   <figure>
     <img src="img/img-art/desenho-2.png" alt="Arte 2" onclick="abrirLightbox(1)">
-    <figcaption>Minha legenda 2</figcaption>
   </figure>
   <figure>
     <img src="img/img-art/desenho-3.png" alt="Arte 3" onclick="abrirLightbox(2)">
-    <figcaption>Minha legenda 3</figcaption>
   </figure>
   <figure>
     <img src="img/img-art/desenho-4.png" alt="Arte 4" onclick="abrirLightbox(3)">
-    <figcaption>Minha legenda 4</figcaption>
   </figure>
   <figure>
     <img src="img/img-art/desenho-5.png" alt="Arte 5" onclick="abrirLightbox(4)">
-    <figcaption>Minha legenda 5</figcaption>
+    <figcaption>Princesa Mononoke</figcaption>
   </figure>
   <figure>
     <img src="img/img-art/desenho-6.png" alt="Arte 6" onclick="abrirLightbox(5)">
-    <figcaption>Minha legenda 6</figcaption>
+    <figcaption>Colab com katy</figcaption>
+  </figure>
+  <figure>
+    <img src="img/img-art/desenho-7.png" alt="Arte 7" onclick="abrirLightbox(6)">
+    <figcaption>Minha legenda 7</figcaption>
+  </figure>
+  <figure>
+    <img src="img/img-art/desenho-8.png" alt="Arte 8" onclick="abrirLightbox(7)">
+  </figure>
+  <figure>
+    <img src="img/img-art/desenho-9.png" alt="Arte 9" onclick="abrirLightbox(8)">
+  </figure>
+  <figure>
+    <img src="img/img-art/desenho-10.png" alt="Arte 10" onclick="abrirLightbox(9)">
+  </figure>
+  <figure>
+    <img src="img/img-art/desenho-11.png" alt="Arte 11" onclick="abrirLightbox(10)">
+  </figure>
+  <figure>
+    <img src="img/img-art/desenho-12.png" alt="Arte 12" onclick="abrirLightbox(11)">
+  </figure>
+  <figure>
+    <img src="img/img-art/desenho-13.png" alt="Arte 13" onclick="abrirLightbox(12)">
+  </figure>
+  <figure>
+    <img src="img/img-art/desenho-14.png" alt="Arte 14" onclick="abrirLightbox(13)">
+  </figure>
+  <figure>  
+    <video src="img/img-art/desenho-15.mp4" autoplay loop muted playsinline style="width: 300px;" alt="Arte 15" onclick="abrirLightbox(14)"></video>
   </figure>
 </div>
 
 <!-- Lightbox Galeria -->
 <div id="lightboxGaleria" class="lightbox">
   <span class="fechar" onclick="fecharLightbox()">✖</span>
-  <img id="lightbox-img">
+  <img id="lightbox-img" style="max-width:90%; max-height:80%; display:none;">
+  <video id="lightbox-video" controls style="max-width:90%; max-height:80%; display:none;"></video>
   <p id="lightbox-caption"></p>
   <button class="nav-btn prev" onclick="mudarImagem(-1)">⟨</button>
   <button class="nav-btn next" onclick="mudarImagem(1)">⟩</button>
 </div>
+
 
 <!-- Botão Sobre Mim -->
 <button id="openBtn" class="botao">Sobre mim</button>
