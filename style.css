@@ -139,7 +139,6 @@ body {
   justify-content: center;
   align-items: flex-start;
   overflow-y: auto;
-<<<<<<< HEAD
   padding: 40px;
   z-index: 999;
 }
@@ -157,9 +156,7 @@ body {
   align-items: center;
   overflow-y: auto;
   padding: 40px;  
-=======
   padding: 40px 20px;
->>>>>>> 3cb0faa4d212a8c88b9511d826bd11ea0858b0eb
   z-index: 1000;
 }
 
